@@ -1,15 +1,21 @@
-#include<stdio.h>
-void circle(int a)
-{
-    int dia=2*a;
-    int cir=2*3.14*a;
-    int area=3.14*a*a;
-    printf("diametr circumfrence and area are %d,%d,%d",dia,cir,area);
-}
+#include <stdio.h>
+
 int main()
 {
-    int num;
-    printf("enter redius :");
-    scanf("%d",&num);
-    circle(num);
+    float radius, diameter, circumference, area;
+    
+    
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+
+    diameter = 2 * radius;
+    circumference = 2 * 3.14 * radius;
+    area = 3.14 * (radius * radius);
+
+    
+    printf("Diameter of circle = %.2f units \n", diameter);
+    printf("Circumference of circle = %.2f units \n", circumference);
+    printf("Area of circle = %.2f sq. units ", area);
+
+    return 0;
 }
